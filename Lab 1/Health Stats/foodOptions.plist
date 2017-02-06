@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Breakfast</key>
+	<array>
+		<string>eggs</string>
+		<string>cereal</string>
+		<string>waffles</string>
+	</array>
+	<key>Lunch</key>
+	<array>
+		<string>salad</string>
+		<string>a sandwich </string>
+		<string>soup</string>
+	</array>
+	<key>Dinner</key>
+	<array>
+		<string>steak</string>
+		<string>stir fry</string>
+		<string>pasta</string>
+	</array>
+</dict>
+</plist>
