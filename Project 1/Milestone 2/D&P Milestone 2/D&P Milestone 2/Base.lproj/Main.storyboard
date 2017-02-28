@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2Xx-pK-vWf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="D_P_Milestone_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapBackground" translatesAutoresizingMaskIntoConstraints="NO" id="hCS-57-AZm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="YT4-UM-Vv8">
+                                <rect key="frame" x="37" y="72" width="300" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="psychWorldLogo" translatesAutoresizingMaskIntoConstraints="NO" id="ISZ-9d-aLQ">
+                                <rect key="frame" x="42" y="504" width="150" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="brainWorldLogo" translatesAutoresizingMaskIntoConstraints="NO" id="DJR-xb-ypj">
+                                <rect key="frame" x="197" y="359" width="150" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3S-mf-0pj">
+                                <rect key="frame" x="202" y="167" width="140" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="statWorldIcon"/>
+                                <connections>
+                                    <segue destination="NUI-0y-QLO" kind="presentation" id="d2l-70-QAm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKm-1g-FDM">
+                                <rect key="frame" x="47" y="312" width="140" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="brainWorld"/>
+                                <connections>
+                                    <segue destination="WLG-ue-aK1" kind="presentation" id="49A-ZS-FgK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6o-zt-aha">
+                                <rect key="frame" x="202" y="464" width="140" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="psychWorld"/>
+                                <connections>
+                                    <segue destination="8D2-aa-2kd" kind="presentation" id="2Dn-6t-lsc"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="statsWorldLogo" translatesAutoresizingMaskIntoConstraints="NO" id="RfL-6w-LNY">
+                                <rect key="frame" x="42" y="207" width="150" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hCS-57-AZm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6CL-nk-CNy"/>
+                            <constraint firstAttribute="trailing" secondItem="hCS-57-AZm" secondAttribute="trailing" id="FpU-OX-pgr"/>
+                            <constraint firstItem="hCS-57-AZm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TWn-B8-uBx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hCS-57-AZm" secondAttribute="bottom" id="rmI-9y-HAA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="r4H-Hq-Ytv">
+                        <barButtonItem key="rightBarButtonItem" image="PenguinProfileIcon-1" id="NVQ-t0-oyV">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="Iwt-i5-ciH" kind="presentation" modalTransitionStyle="coverVertical" id="ftd-uM-J9L"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="36.431784107946029"/>
+        </scene>
+        <!--Stat Dungeon View Controller-->
+        <scene sceneID="Kh1-lh-Gpq">
+            <objects>
+                <viewController id="NUI-0y-QLO" customClass="StatDungeonViewController" customModule="D_P_Milestone_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GQW-Zd-MuN"/>
+                        <viewControllerLayoutGuide type="bottom" id="u7v-I7-AQ5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IAx-4B-sGX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="mapBackground" translatesAutoresizingMaskIntoConstraints="NO" id="t2e-Of-gbb">
+                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="TLI-ba-bVj">
+                                <rect key="frame" x="65" y="537" width="245" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="A"/>
+                                    <segment title="B"/>
+                                    <segment title="C"/>
+                                    <segment title="D"/>
+                                </segments>
+                                <color key="tintColor" red="0.5450980392" green="0.1647058824" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="statsWorldLogo" translatesAutoresizingMaskIntoConstraints="NO" id="x7B-Yg-xat">
+                                <rect key="frame" x="87" y="20" width="200" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="normalDistributionMonster" translatesAutoresizingMaskIntoConstraints="NO" id="K42-KH-G1j">
+                                <rect key="frame" x="16" y="109" width="90" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n0G-hx-qtM">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ifk-lX-Fj1"/>
+                                    <barButtonItem title="Exit" id="YTq-dJ-zY4">
+                                        <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="af4-LO-H2Y" kind="unwind" unwindAction="unwindSegue:" id="LZv-b0-M50"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Question to be displayed" textAlignment="natural" minimumFontSize="17" background="answerRectangle" translatesAutoresizingMaskIntoConstraints="NO" id="fFK-LJ-poz">
+                                <rect key="frame" x="16" y="247" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R70-ps-hbR">
+                                <rect key="frame" x="114" y="573" width="146" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
+                                <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="SUBMIT">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="warriorPenguin" translatesAutoresizingMaskIntoConstraints="NO" id="7xN-Y1-ikM">
+                                <rect key="frame" x="279" y="449" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="t2e-Of-gbb" firstAttribute="leading" secondItem="IAx-4B-sGX" secondAttribute="leadingMargin" id="Gn4-DM-9wD"/>
+                            <constraint firstAttribute="trailing" secondItem="n0G-hx-qtM" secondAttribute="trailing" id="OGo-t5-NTM"/>
+                            <constraint firstItem="u7v-I7-AQ5" firstAttribute="top" secondItem="t2e-Of-gbb" secondAttribute="bottom" id="V0v-m8-VaJ"/>
+                            <constraint firstItem="u7v-I7-AQ5" firstAttribute="top" secondItem="n0G-hx-qtM" secondAttribute="bottom" id="Vbt-lr-1Hu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="t2e-Of-gbb" secondAttribute="trailing" id="XXa-mo-fEL"/>
+                            <constraint firstItem="t2e-Of-gbb" firstAttribute="top" secondItem="GQW-Zd-MuN" secondAttribute="bottom" id="stj-qQ-diD"/>
+                            <constraint firstItem="n0G-hx-qtM" firstAttribute="leading" secondItem="IAx-4B-sGX" secondAttribute="leading" id="t0C-X9-Uii"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7BG-hK-qz5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="af4-LO-H2Y" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1856.8" y="-622.03898050974522"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7Xl-sC-MX2">
+            <objects>
+                <viewController id="8D2-aa-2kd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OwY-9N-Q78"/>
+                        <viewControllerLayoutGuide type="bottom" id="9qn-uu-bAb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hJ7-Yi-WAr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="mapBackground" translatesAutoresizingMaskIntoConstraints="NO" id="1kq-j5-v8R">
+                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9q5-Yh-68G">
+                                <rect key="frame" x="65" y="545" width="245" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="A"/>
+                                    <segment title="B"/>
+                                    <segment title="C"/>
+                                    <segment title="D"/>
+                                </segments>
+                                <color key="tintColor" red="0.5450980392" green="0.1647058824" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Question to be displayed" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eEy-II-Mle">
+                                <rect key="frame" x="16" y="258" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IyB-8z-2f7">
+                                <rect key="frame" x="114" y="581" width="146" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
+                                <state key="normal" title="SUBMIT">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebd-xS-sVc">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="gWV-Bv-HZP"/>
+                                    <barButtonItem title="Exit" id="3Sl-Yj-Md3">
+                                        <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="lYU-Md-0eo" kind="unwind" unwindAction="unwindSegue:" id="N4v-Xi-n0V"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pavlovMonster" translatesAutoresizingMaskIntoConstraints="NO" id="ZYV-kV-vdz">
+                                <rect key="frame" x="44" y="113" width="74" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="psychWorldLogo" translatesAutoresizingMaskIntoConstraints="NO" id="D1l-XI-KYQ">
+                                <rect key="frame" x="87" y="20" width="200" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="warriorPenguin" translatesAutoresizingMaskIntoConstraints="NO" id="8pD-fs-xZY">
+                                <rect key="frame" x="279" y="457" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ebd-xS-sVc" firstAttribute="leading" secondItem="hJ7-Yi-WAr" secondAttribute="leading" id="Bfg-s2-8Rg"/>
+                            <constraint firstItem="1kq-j5-v8R" firstAttribute="leading" secondItem="hJ7-Yi-WAr" secondAttribute="leadingMargin" id="Hrh-Gg-LXh"/>
+                            <constraint firstAttribute="trailing" secondItem="ebd-xS-sVc" secondAttribute="trailing" id="NPq-Ca-cE7"/>
+                            <constraint firstItem="9qn-uu-bAb" firstAttribute="top" secondItem="ebd-xS-sVc" secondAttribute="bottom" id="nwV-DJ-lo1"/>
+                            <constraint firstItem="1kq-j5-v8R" firstAttribute="top" secondItem="OwY-9N-Q78" secondAttribute="bottom" id="q7n-Om-r8b"/>
+                            <constraint firstItem="9qn-uu-bAb" firstAttribute="top" secondItem="1kq-j5-v8R" secondAttribute="bottom" id="tlx-9y-MRF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1kq-j5-v8R" secondAttribute="trailing" id="vn9-19-8NI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tQH-Pu-vVz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="lYU-Md-0eo" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="939.58020989505258"/>
+        </scene>
+        <!--Dendritic Dungeon View Controller-->
+        <scene sceneID="Sqz-rm-qAT">
+            <objects>
+                <viewController id="WLG-ue-aK1" customClass="DendriticDungeonViewController" customModule="D_P_Milestone_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rkR-qF-chY"/>
+                        <viewControllerLayoutGuide type="bottom" id="cYV-tZ-AlT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NzL-H4-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Psa-yT-y7G">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Lj5-5O-1ub">
+                                <rect key="frame" x="65" y="537" width="245" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="A"/>
+                                    <segment title="B"/>
+                                    <segment title="C"/>
+                                    <segment title="D"/>
+                                </segments>
+                                <color key="tintColor" red="0.5450980392" green="0.1647058824" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Question to be displayed" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mbs-iF-b3j">
+                                <rect key="frame" x="16" y="288" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ko5-mv-uw2">
+                                <rect key="frame" x="114" y="570" width="146" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
+                                <state key="normal" title="SUBMIT">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oba-rp-SzG">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="thp-Y1-lvJ"/>
+                                    <barButtonItem title="Exit" id="kxO-wk-qpZ">
+                                        <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="7Ui-AP-uEK" kind="unwind" unwindAction="unwindSegue:" id="Uog-4s-HGa"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="brainWorldLogo" translatesAutoresizingMaskIntoConstraints="NO" id="O56-U1-kb9">
+                                <rect key="frame" x="87" y="28" width="200" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="neuronMonster" translatesAutoresizingMaskIntoConstraints="NO" id="DMg-Fs-7Re">
+                                <rect key="frame" x="30" y="110" width="83" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="warriorPenguin" translatesAutoresizingMaskIntoConstraints="NO" id="hSd-uu-AM3">
+                                <rect key="frame" x="279" y="449" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oba-rp-SzG" firstAttribute="leading" secondItem="NzL-H4-sqS" secondAttribute="leading" id="08n-jO-8NR"/>
+                            <constraint firstItem="cYV-tZ-AlT" firstAttribute="top" secondItem="oba-rp-SzG" secondAttribute="bottom" id="6dQ-br-fN2"/>
+                            <constraint firstItem="Psa-yT-y7G" firstAttribute="leading" secondItem="NzL-H4-sqS" secondAttribute="leading" id="Llo-qL-YCf"/>
+                            <constraint firstItem="cYV-tZ-AlT" firstAttribute="top" secondItem="Psa-yT-y7G" secondAttribute="bottom" id="YX9-vm-1jz"/>
+                            <constraint firstAttribute="trailing" secondItem="oba-rp-SzG" secondAttribute="trailing" id="YsZ-Dy-zjJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Psa-yT-y7G" secondAttribute="trailing" id="huj-2K-AbH"/>
+                            <constraint firstItem="Psa-yT-y7G" firstAttribute="top" secondItem="NzL-H4-sqS" secondAttribute="top" id="upQ-mm-asW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hPn-5I-dza" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="7Ui-AP-uEK" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2182" y="329"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="krU-3u-ctO">
+            <objects>
+                <viewController id="Iwt-i5-ciH" customClass="ProfileViewController" customModule="D_P_Milestone_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="246-wA-2bo"/>
+                        <viewControllerLayoutGuide type="bottom" id="ATf-jP-kAB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="eZ7-Sd-ylP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapBackground" translatesAutoresizingMaskIntoConstraints="NO" id="r7J-vR-ztR">
+                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1L2-l5-vQ7">
+                                <rect key="frame" x="16" y="121" width="101" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="24"/>
+                                <color key="textColor" red="0.096277631641773068" green="0.11363147128384071" blue="0.20680857041025646" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sprite" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdR-k1-z0g">
+                                <rect key="frame" x="16" y="252" width="101" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="24"/>
+                                <color key="textColor" red="0.096277631641773068" green="0.11363147128384071" blue="0.20680857041025646" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cv0-BA-qQV">
+                                <rect key="frame" x="16" y="424" width="101" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="24"/>
+                                <color key="textColor" red="0.096277631641773068" green="0.11363147128384071" blue="0.20680857041025646" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Best Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teG-Hh-vY5">
+                                <rect key="frame" x="16" y="539" width="101" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="24"/>
+                                <color key="textColor" red="0.096277631641773068" green="0.11363147128384071" blue="0.20680857041025646" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bLb-Da-B5E">
+                                <rect key="frame" x="136" y="119" width="214" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="WSd-36-cJm">
+                                <rect key="frame" x="176" y="424" width="121" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Novice"/>
+                                    <segment title="Expert"/>
+                                </segments>
+                                <color key="tintColor" red="0.54509803921568623" green="0.16470588235294117" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="originalPenguin" translatesAutoresizingMaskIntoConstraints="NO" id="Hdv-A9-QZ6">
+                                <rect key="frame" x="136" y="239" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="magicPenguin" translatesAutoresizingMaskIntoConstraints="NO" id="2tQ-PC-gEK">
+                                <rect key="frame" x="206" y="229" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="warriorPenguin" translatesAutoresizingMaskIntoConstraints="NO" id="Rwv-kx-bxq">
+                                <rect key="frame" x="290" y="234" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2dq-l8-7fF">
+                                <rect key="frame" x="136" y="311" width="214" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Original"/>
+                                    <segment title="Magician"/>
+                                    <segment title="Warrior"/>
+                                </segments>
+                                <color key="tintColor" red="0.5440304487179487" green="0.16639792598688805" blue="0.15668781580602678" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ProfileLabel" translatesAutoresizingMaskIntoConstraints="NO" id="9UX-fb-n9m">
+                                <rect key="frame" x="136" y="28" width="103" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ji-ch-xho">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Cancel" id="wX5-bz-riO">
+                                        <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="Pee-CH-Z2s" kind="unwind" identifier="cancelSegue" unwindAction="unwindSegue:" id="vkb-sI-Kgz"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="4fg-Up-4NX"/>
+                                    <barButtonItem title="Save" id="8bd-Ke-Snj">
+                                        <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="Pee-CH-Z2s" kind="unwind" identifier="saveSegue" unwindAction="unwindSegue:" id="qqx-wd-uYr"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Score" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0hK-Pd-koI">
+                                <rect key="frame" x="188" y="537" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7Ji-ch-xho" secondAttribute="trailing" id="BaG-RY-3wb"/>
+                            <constraint firstItem="7Ji-ch-xho" firstAttribute="leading" secondItem="eZ7-Sd-ylP" secondAttribute="leading" id="XAY-sF-0iQ"/>
+                            <constraint firstAttribute="bottom" secondItem="7Ji-ch-xho" secondAttribute="bottom" id="imz-nD-E6b"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gXc-fr-2Fa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Pee-CH-Z2s" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="948" y="-622.03898050974522"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bXk-Ot-7iQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Xx-pK-vWf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aBv-ef-mRD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sxl-NQ-Rnj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r3l-QJ-EJ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PenguinProfileIcon-1" width="30" height="30"/>
+        <image name="ProfileLabel" width="201" height="76"/>
+        <image name="answerRectangle" width="509" height="360"/>
+        <image name="brainWorld" width="1200" height="1200"/>
+        <image name="brainWorldLogo" width="268" height="116"/>
+        <image name="magicPenguin" width="1184" height="1710"/>
+        <image name="mainLogo" width="528" height="76"/>
+        <image name="mapBackground" width="2100" height="2100"/>
+        <image name="neuronMonster" width="340" height="548"/>
+        <image name="normalDistributionMonster" width="508" height="464"/>
+        <image name="originalPenguin" width="917" height="1289"/>
+        <image name="pavlovMonster" width="353" height="371"/>
+        <image name="psychWorld" width="1200" height="1200"/>
+        <image name="psychWorldLogo" width="295" height="116"/>
+        <image name="statWorldIcon" width="1200" height="1200"/>
+        <image name="statsWorldLogo" width="283" height="116"/>
+        <image name="warriorPenguin" width="1240" height="1459"/>
+    </resources>
+</document>
