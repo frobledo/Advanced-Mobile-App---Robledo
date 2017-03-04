@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Q61-N1-zXD">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Aussie LIfe-->
+        <scene sceneID="h3l-4b-iAr">
+            <objects>
+                <collectionViewController id="CGf-19-nej" customClass="CollectionViewController" customModule="AussieLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="FFp-HG-xMs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="q96-TQ-LtY">
+                            <size key="itemSize" width="100" height="100"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
+                            <size key="footerReferenceSize" width="50" height="50"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="lXg-NW-vlp" customClass="CollectionViewCell" customModule="AussieLife" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ziZ-qE-Aus">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ziZ-qE-Aus" secondAttribute="bottom" id="09j-9G-LS6"/>
+                                    <constraint firstAttribute="trailing" secondItem="ziZ-qE-Aus" secondAttribute="trailing" id="IFN-Qp-A7o"/>
+                                    <constraint firstItem="ziZ-qE-Aus" firstAttribute="top" secondItem="lXg-NW-vlp" secondAttribute="top" id="eBe-aL-agO"/>
+                                    <constraint firstItem="ziZ-qE-Aus" firstAttribute="leading" secondItem="lXg-NW-vlp" secondAttribute="leading" id="ynp-j7-Vlv"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="ziZ-qE-Aus" id="EXV-Fz-CG5"/>
+                                    <segue destination="5RG-vb-A44" kind="show" identifier="showImage" id="b6v-iR-dTa"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Header" id="ebx-ZN-Aht" customClass="CollectionSupplementaryView" customModule="AussieLife" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0H-p1-kSM">
+                                    <rect key="frame" x="8" y="15" width="359" height="21"/>
+                                    <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                    <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="z0H-p1-kSM" firstAttribute="centerY" secondItem="ebx-ZN-Aht" secondAttribute="centerY" id="52m-FK-Kka"/>
+                                <constraint firstItem="z0H-p1-kSM" firstAttribute="trailing" secondItem="ebx-ZN-Aht" secondAttribute="trailingMargin" id="ZyX-8u-MzU"/>
+                                <constraint firstItem="z0H-p1-kSM" firstAttribute="top" secondItem="ebx-ZN-Aht" secondAttribute="topMargin" constant="7" id="aoo-2P-wot"/>
+                                <constraint firstItem="z0H-p1-kSM" firstAttribute="leading" secondItem="ebx-ZN-Aht" secondAttribute="leadingMargin" id="nqG-73-L1Z"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="headerLabel" destination="z0H-p1-kSM" id="9Wo-f7-XPU"/>
+                            </connections>
+                        </collectionReusableView>
+                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Footer" id="772-i8-Xxy" customClass="CollectionSupplementaryView" customModule="AussieLife" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="150" width="375" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9G-x2-owT">
+                                    <rect key="frame" x="8" y="15" width="359" height="21"/>
+                                    <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                    <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="r9G-x2-owT" firstAttribute="leading" secondItem="772-i8-Xxy" secondAttribute="leadingMargin" id="6le-mL-Kgq"/>
+                                <constraint firstItem="r9G-x2-owT" firstAttribute="top" secondItem="772-i8-Xxy" secondAttribute="topMargin" constant="7" id="Cqi-6Y-nQi"/>
+                                <constraint firstItem="r9G-x2-owT" firstAttribute="centerY" secondItem="772-i8-Xxy" secondAttribute="centerY" id="GC1-jD-Dzh"/>
+                                <constraint firstItem="r9G-x2-owT" firstAttribute="trailing" secondItem="772-i8-Xxy" secondAttribute="trailingMargin" id="qTC-BM-fQy"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="footerLabel" destination="r9G-x2-owT" id="lYo-ab-lhF"/>
+                            </connections>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="CGf-19-nej" id="eXI-JN-ydZ"/>
+                            <outlet property="delegate" destination="CGf-19-nej" id="lmX-3r-xvT"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Aussie LIfe" id="5gL-iK-lHP"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0IF-Sj-yeq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="809" y="-56"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Ve0-gA-2IH">
+            <objects>
+                <viewController id="5RG-vb-A44" customClass="DetailViewController" customModule="AussieLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cT9-8U-tfu"/>
+                        <viewControllerLayoutGuide type="bottom" id="87c-bx-kSn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aoP-0h-xXt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xCW-fa-CNJ">
+                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xCW-fa-CNJ" firstAttribute="leading" secondItem="aoP-0h-xXt" secondAttribute="leading" id="3CW-PR-25L"/>
+                            <constraint firstItem="xCW-fa-CNJ" firstAttribute="top" secondItem="cT9-8U-tfu" secondAttribute="bottom" constant="8" id="7wc-UC-Goc"/>
+                            <constraint firstItem="87c-bx-kSn" firstAttribute="top" secondItem="xCW-fa-CNJ" secondAttribute="bottom" id="p84-US-S0G"/>
+                            <constraint firstAttribute="trailing" secondItem="xCW-fa-CNJ" secondAttribute="trailing" id="wjh-wh-tgh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xgg-tG-g2m">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="xcL-43-1gt">
+                            <connections>
+                                <action selector="share:" destination="5RG-vb-A44" id="Lxa-wg-OaX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="detailView" destination="xCW-fa-CNJ" id="Az7-wP-30k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bvv-nA-on3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1788" y="-46.326836581709152"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YTX-ai-9qe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q61-N1-zXD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zJ3-dm-V3M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CGf-19-nej" kind="relationship" relationship="rootViewController" id="TWN-7g-1lo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2b3-3Y-XoR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48.799999999999997" y="-56.221889055472268"/>
+        </scene>
+    </scenes>
+</document>
