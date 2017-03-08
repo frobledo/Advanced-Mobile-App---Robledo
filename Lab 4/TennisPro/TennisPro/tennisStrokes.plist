@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>strokes</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Forehand</string>
+			<key>url</key>
+			<string>https://www.youtube.com/watch?v=1ImeQaAyFPc</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Backhand</string>
+			<key>url</key>
+			<string>https://www.youtube.com/watch?v=-d8IeILwDvo</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Serve</string>
+			<key>url</key>
+			<string>https://www.youtube.com/watch?v=a5qToCjVvm4</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Volley</string>
+			<key>url</key>
+			<string>https://www.youtube.com/watch?v=hBMYf5pPv9g</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Slice</string>
+			<key>url</key>
+			<string>https://www.youtube.com/watch?v=HIpb4Ocd4og</string>
+		</dict>
+	</array>
+</dict>
+</plist>
