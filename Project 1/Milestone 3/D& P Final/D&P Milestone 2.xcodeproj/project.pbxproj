@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		800C9E7B1E60CD5E006DDFA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800C9E7A1E60CD5E006DDFA2 /* AppDelegate.swift */; };
+		800C9E7D1E60CD5E006DDFA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800C9E7C1E60CD5E006DDFA2 /* ViewController.swift */; };
+		800C9E801E60CD5E006DDFA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800C9E7E1E60CD5E006DDFA2 /* Main.storyboard */; };
+		800C9E821E60CD5F006DDFA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 800C9E811E60CD5F006DDFA2 /* Assets.xcassets */; };
+		800C9E851E60CD5F006DDFA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800C9E831E60CD5F006DDFA2 /* LaunchScreen.storyboard */; };
+		800C9E8D1E64BD87006DDFA2 /* StatDungeonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800C9E8C1E64BD87006DDFA2 /* StatDungeonViewController.swift */; };
+		800C9E8F1E64BDBF006DDFA2 /* DendriticDungeonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800C9E8E1E64BDBF006DDFA2 /* DendriticDungeonViewController.swift */; };
+		800C9E911E64BDF0006DDFA2 /* ClinicalDugeonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800C9E901E64BDF0006DDFA2 /* ClinicalDugeonViewController.swift */; };
+		800C9E951E651E41006DDFA2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800C9E941E651E41006DDFA2 /* ProfileViewController.swift */; };
+		80B322911E76385900335083 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B322901E76385900335083 /* UserDefaults.swift */; };
+		80B322931E76478A00335083 /* ClinicalDungeonEasyQ.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80B322921E76478A00335083 /* ClinicalDungeonEasyQ.plist */; };
+		80B322951E7647A500335083 /* ClinicalDungeonDiffQ.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80B322941E7647A500335083 /* ClinicalDungeonDiffQ.plist */; };
+		80B322971E7647BA00335083 /* ClinicalDungeonEasyA.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80B322961E7647BA00335083 /* ClinicalDungeonEasyA.plist */; };
+		80B322991E7647E300335083 /* ClinicalDungeonDiffA.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80B322981E7647E300335083 /* ClinicalDungeonDiffA.plist */; };
+		80B3229B1E76480500335083 /* DendriticDungeonEasyQ.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80B3229A1E76480500335083 /* DendriticDungeonEasyQ.plist */; };
+		80B3229D1E76481E00335083 /* DendriticDengeonEasyA.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80B3229C1E76481E00335083 /* DendriticDengeonEasyA.plist */; };
+		80B3229F1E76482D00335083 /* DendriticDungeonDiffQ.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80B3229E1E76482D00335083 /* DendriticDungeonDiffQ.plist */; };
+		80B322A11E76483C00335083 /* DendriticDungeonDiffA.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80B322A01E76483C00335083 /* DendriticDungeonDiffA.plist */; };
+		80DDE5971E73862600E10877 /* DungeonsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DDE5961E73862500E10877 /* DungeonsClass.swift */; };
+		80DDE59C1E7589A600E10877 /* StatDungeonDiffA.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80DDE5981E7589A500E10877 /* StatDungeonDiffA.plist */; };
+		80DDE59D1E7589A700E10877 /* StatDungeonDiffQ.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80DDE5991E7589A600E10877 /* StatDungeonDiffQ.plist */; };
+		80DDE59E1E7589A700E10877 /* StatDungeonEasyA.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80DDE59A1E7589A600E10877 /* StatDungeonEasyA.plist */; };
+		80DDE59F1E7589A700E10877 /* StatDungeonEasyQ.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80DDE59B1E7589A600E10877 /* StatDungeonEasyQ.plist */; };
+		80DDE5A11E75AAC900E10877 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DDE5A01E75AAC900E10877 /* EditProfileViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		800C9E771E60CD5E006DDFA2 /* D&P Milestone 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "D&P Milestone 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		800C9E7A1E60CD5E006DDFA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		800C9E7C1E60CD5E006DDFA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		800C9E7F1E60CD5E006DDFA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		800C9E811E60CD5F006DDFA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		800C9E841E60CD5F006DDFA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		800C9E861E60CD5F006DDFA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		800C9E8C1E64BD87006DDFA2 /* StatDungeonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatDungeonViewController.swift; sourceTree = "<group>"; };
+		800C9E8E1E64BDBF006DDFA2 /* DendriticDungeonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DendriticDungeonViewController.swift; sourceTree = "<group>"; };
+		800C9E901E64BDF0006DDFA2 /* ClinicalDugeonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicalDugeonViewController.swift; sourceTree = "<group>"; };
+		800C9E941E651E41006DDFA2 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		80B322901E76385900335083 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		80B322921E76478A00335083 /* ClinicalDungeonEasyQ.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ClinicalDungeonEasyQ.plist; sourceTree = "<group>"; };
+		80B322941E7647A500335083 /* ClinicalDungeonDiffQ.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ClinicalDungeonDiffQ.plist; sourceTree = "<group>"; };
+		80B322961E7647BA00335083 /* ClinicalDungeonEasyA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ClinicalDungeonEasyA.plist; sourceTree = "<group>"; };
+		80B322981E7647E300335083 /* ClinicalDungeonDiffA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ClinicalDungeonDiffA.plist; sourceTree = "<group>"; };
+		80B3229A1E76480500335083 /* DendriticDungeonEasyQ.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DendriticDungeonEasyQ.plist; sourceTree = "<group>"; };
+		80B3229C1E76481E00335083 /* DendriticDengeonEasyA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DendriticDengeonEasyA.plist; sourceTree = "<group>"; };
+		80B3229E1E76482D00335083 /* DendriticDungeonDiffQ.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DendriticDungeonDiffQ.plist; sourceTree = "<group>"; };
+		80B322A01E76483C00335083 /* DendriticDungeonDiffA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DendriticDungeonDiffA.plist; sourceTree = "<group>"; };
+		80DDE5961E73862500E10877 /* DungeonsClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DungeonsClass.swift; sourceTree = "<group>"; };
+		80DDE5981E7589A500E10877 /* StatDungeonDiffA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StatDungeonDiffA.plist; sourceTree = "<group>"; };
+		80DDE5991E7589A600E10877 /* StatDungeonDiffQ.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StatDungeonDiffQ.plist; sourceTree = "<group>"; };
+		80DDE59A1E7589A600E10877 /* StatDungeonEasyA.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StatDungeonEasyA.plist; sourceTree = "<group>"; };
+		80DDE59B1E7589A600E10877 /* StatDungeonEasyQ.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StatDungeonEasyQ.plist; sourceTree = "<group>"; };
+		80DDE5A01E75AAC900E10877 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		800C9E741E60CD5E006DDFA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		800C9E6E1E60CD5D006DDFA2 = {
+			isa = PBXGroup;
+			children = (
+				800C9E791E60CD5E006DDFA2 /* D&P Milestone 2 */,
+				800C9E781E60CD5E006DDFA2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		800C9E781E60CD5E006DDFA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				800C9E771E60CD5E006DDFA2 /* D&P Milestone 2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		800C9E791E60CD5E006DDFA2 /* D&P Milestone 2 */ = {
+			isa = PBXGroup;
+			children = (
+				800C9E7A1E60CD5E006DDFA2 /* AppDelegate.swift */,
+				80DDE5961E73862500E10877 /* DungeonsClass.swift */,
+				80B322901E76385900335083 /* UserDefaults.swift */,
+				800C9E7C1E60CD5E006DDFA2 /* ViewController.swift */,
+				800C9E941E651E41006DDFA2 /* ProfileViewController.swift */,
+				80DDE5A01E75AAC900E10877 /* EditProfileViewController.swift */,
+				800C9E901E64BDF0006DDFA2 /* ClinicalDugeonViewController.swift */,
+				800C9E8E1E64BDBF006DDFA2 /* DendriticDungeonViewController.swift */,
+				800C9E8C1E64BD87006DDFA2 /* StatDungeonViewController.swift */,
+				800C9E7E1E60CD5E006DDFA2 /* Main.storyboard */,
+				800C9E811E60CD5F006DDFA2 /* Assets.xcassets */,
+				800C9E831E60CD5F006DDFA2 /* LaunchScreen.storyboard */,
+				80B322921E76478A00335083 /* ClinicalDungeonEasyQ.plist */,
+				80B322961E7647BA00335083 /* ClinicalDungeonEasyA.plist */,
+				80B322941E7647A500335083 /* ClinicalDungeonDiffQ.plist */,
+				80B322981E7647E300335083 /* ClinicalDungeonDiffA.plist */,
+				80B3229A1E76480500335083 /* DendriticDungeonEasyQ.plist */,
+				80B3229C1E76481E00335083 /* DendriticDengeonEasyA.plist */,
+				80B3229E1E76482D00335083 /* DendriticDungeonDiffQ.plist */,
+				80B322A01E76483C00335083 /* DendriticDungeonDiffA.plist */,
+				80DDE59B1E7589A600E10877 /* StatDungeonEasyQ.plist */,
+				80DDE59A1E7589A600E10877 /* StatDungeonEasyA.plist */,
+				80DDE5991E7589A600E10877 /* StatDungeonDiffQ.plist */,
+				80DDE5981E7589A500E10877 /* StatDungeonDiffA.plist */,
+				800C9E861E60CD5F006DDFA2 /* Info.plist */,
+			);
+			path = "D&P Milestone 2";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		800C9E761E60CD5E006DDFA2 /* D&P Milestone 2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 800C9E891E60CD5F006DDFA2 /* Build configuration list for PBXNativeTarget "D&P Milestone 2" */;
+			buildPhases = (
+				800C9E731E60CD5E006DDFA2 /* Sources */,
+				800C9E741E60CD5E006DDFA2 /* Frameworks */,
+				800C9E751E60CD5E006DDFA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "D&P Milestone 2";
+			productName = "D&P Milestone 2";
+			productReference = 800C9E771E60CD5E006DDFA2 /* D&P Milestone 2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		800C9E6F1E60CD5D006DDFA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Fuji Robledo";
+				TargetAttributes = {
+					800C9E761E60CD5E006DDFA2 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = AVASB7T5AD;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 800C9E721E60CD5D006DDFA2 /* Build configuration list for PBXProject "D&P Milestone 2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 800C9E6E1E60CD5D006DDFA2;
+			productRefGroup = 800C9E781E60CD5E006DDFA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				800C9E761E60CD5E006DDFA2 /* D&P Milestone 2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		800C9E751E60CD5E006DDFA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				800C9E851E60CD5F006DDFA2 /* LaunchScreen.storyboard in Resources */,
+				80B3229F1E76482D00335083 /* DendriticDungeonDiffQ.plist in Resources */,
+				800C9E821E60CD5F006DDFA2 /* Assets.xcassets in Resources */,
+				80B3229B1E76480500335083 /* DendriticDungeonEasyQ.plist in Resources */,
+				80DDE59F1E7589A700E10877 /* StatDungeonEasyQ.plist in Resources */,
+				80DDE59C1E7589A600E10877 /* StatDungeonDiffA.plist in Resources */,
+				80B322971E7647BA00335083 /* ClinicalDungeonEasyA.plist in Resources */,
+				800C9E801E60CD5E006DDFA2 /* Main.storyboard in Resources */,
+				80B322951E7647A500335083 /* ClinicalDungeonDiffQ.plist in Resources */,
+				80B322991E7647E300335083 /* ClinicalDungeonDiffA.plist in Resources */,
+				80B322A11E76483C00335083 /* DendriticDungeonDiffA.plist in Resources */,
+				80DDE59D1E7589A700E10877 /* StatDungeonDiffQ.plist in Resources */,
+				80B322931E76478A00335083 /* ClinicalDungeonEasyQ.plist in Resources */,
+				80DDE59E1E7589A700E10877 /* StatDungeonEasyA.plist in Resources */,
+				80B3229D1E76481E00335083 /* DendriticDengeonEasyA.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		800C9E731E60CD5E006DDFA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80DDE5A11E75AAC900E10877 /* EditProfileViewController.swift in Sources */,
+				800C9E951E651E41006DDFA2 /* ProfileViewController.swift in Sources */,
+				80DDE5971E73862600E10877 /* DungeonsClass.swift in Sources */,
+				800C9E911E64BDF0006DDFA2 /* ClinicalDugeonViewController.swift in Sources */,
+				800C9E8F1E64BDBF006DDFA2 /* DendriticDungeonViewController.swift in Sources */,
+				80B322911E76385900335083 /* UserDefaults.swift in Sources */,
+				800C9E8D1E64BD87006DDFA2 /* StatDungeonViewController.swift in Sources */,
+				800C9E7D1E60CD5E006DDFA2 /* ViewController.swift in Sources */,
+				800C9E7B1E60CD5E006DDFA2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		800C9E7E1E60CD5E006DDFA2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				800C9E7F1E60CD5E006DDFA2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		800C9E831E60CD5F006DDFA2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				800C9E841E60CD5F006DDFA2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		800C9E871E60CD5F006DDFA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		800C9E881E60CD5F006DDFA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		800C9E8A1E60CD5F006DDFA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AVASB7T5AD;
+				INFOPLIST_FILE = "D&P Milestone 2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ATLAS.D-P-Milestone-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		800C9E8B1E60CD5F006DDFA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AVASB7T5AD;
+				INFOPLIST_FILE = "D&P Milestone 2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ATLAS.D-P-Milestone-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		800C9E721E60CD5D006DDFA2 /* Build configuration list for PBXProject "D&P Milestone 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				800C9E871E60CD5F006DDFA2 /* Debug */,
+				800C9E881E60CD5F006DDFA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		800C9E891E60CD5F006DDFA2 /* Build configuration list for PBXNativeTarget "D&P Milestone 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				800C9E8A1E60CD5F006DDFA2 /* Debug */,
+				800C9E8B1E60CD5F006DDFA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 800C9E6F1E60CD5D006DDFA2 /* Project object */;
+}

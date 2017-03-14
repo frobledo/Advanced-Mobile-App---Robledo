@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>Here is your first question: The standard deviation of a sample of test scores is a measure of
+
+A. Central tendency of score 
+B. Variability of individual scores 
+C. Line of best fit</string>
+	<string>Question 2: Which of the following increases the power of a statistical test? 
+
+A. Changing alpha from .05 to .01 
+B. Changing alpha from .10 to .01 
+C. Changing from a two-tailed to a one-tailed test</string>
+	<string>Question 3: In in his study of schizophrenia, Dr. Perez collects data on the number of new cases of this diagnosis in the United States in the past year. This statistic is known as: 
+
+A. Prevalence 
+B. Incidence 
+C. Correlation </string>
+	<string>Question 4: Conducting a study by analyzing United States census data from previous years is an example of using which of the following research approaches? 
+
+A. Archival analysis 
+B. Surveys 
+C. Case history</string>
+</array>
+</plist>

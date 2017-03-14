@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>I see you think of yourself as an expert! First question...What is the F-ratio? 
+
+A. The ratio of variation of individual differences to experimental effects
+B. The grand variance between all the scores, regardless of condition
+C. The ratio of experimental effect to the individual differences </string>
+	<string>Question 2: When should you use Factorial ANOVA?
+
+A. When you have two or more dependent variables
+B. When you have two or more independent variables
+C. When participants participate in all conditions of an experiment</string>
+	<string>Question 3: What are orthogonal contrasts?
+
+A. Independent contrasts
+B. Contrasts whose p-values are correlated
+C. Contrasts that contain the placebo group</string>
+	<string>Question 4: The effect size in a population is instrinsically linked to which statistical property?
+
+A. Orthogonal contrasts
+B. The standard deviation
+C. The alpha value</string>
+</array>
+</plist>
