@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MarioWorld</string>
+
+    <string name="marioBanner">Mario Banner</string>
+
+    <string-array name="character_types">
+        <item>Heroes</item>
+        <item>Anti-Heroes</item>
+        <item>Villains</item>
+    </string-array>
+
+    <string name="favorites">Favorites</string>
+
+    <string name="displayFavorites">All the characters are your favorites!</string>
+
+</resources>
