@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "879082873489",
+    "firebase_url": "https://recipes-54327.firebaseio.com",
+    "project_id": "recipes-54327",
+    "storage_bucket": "recipes-54327.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:879082873489:android:3eb95ed4ff6ec33f",
+        "android_client_info": {
+          "package_name": "com.example.programmingpenguin.myhealthypupfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "879082873489-04tuha8pbj7c41ul3vh874ir0eh2m8lb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.programmingpenguin.myhealthypupfinal",
+            "certificate_hash": "d4ac8699f269a26bf4daee3d60c6800336da8521"
+          }
+        },
+        {
+          "client_id": "879082873489-k5gkdadkq13e9t8mm0vtip7umin1n5tk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh8i0cXkuDgv_VJ6rr5Ma7Xw-sUWxdUHI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "879082873489-k5gkdadkq13e9t8mm0vtip7umin1n5tk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "879082873489-t6ga3i3fa3vq2n67j1t7ala6k85dobgf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ATLAS.My-Books"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
