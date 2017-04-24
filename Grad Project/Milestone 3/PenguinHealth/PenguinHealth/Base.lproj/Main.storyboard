@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JNH-63-sVy">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="PenguinHealth" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
+                        <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="477" y="121"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ODK-o8-zyu">
+            <objects>
+                <viewController id="JNH-63-sVy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BXr-wf-y2E"/>
+                        <viewControllerLayoutGuide type="bottom" id="qeV-D6-bVy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f35-75-w8U">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PenguinHealthBackground" translatesAutoresizingMaskIntoConstraints="NO" id="dG8-CH-DBH">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBq-qN-9JF">
+                                <rect key="frame" x="185" y="161" width="297" height="54"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="297" id="Cu7-09-U2W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="36"/>
+                                <state key="normal" title="Start Game">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="f3H-BT-p9c" kind="presentation" id="csz-jc-cr1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dG8-CH-DBH" firstAttribute="centerY" secondItem="RBq-qN-9JF" secondAttribute="centerY" id="A0A-nr-l2b"/>
+                            <constraint firstItem="dG8-CH-DBH" firstAttribute="bottom" secondItem="qeV-D6-bVy" secondAttribute="top" id="K6R-QZ-iT7"/>
+                            <constraint firstItem="dG8-CH-DBH" firstAttribute="top" secondItem="f35-75-w8U" secondAttribute="top" id="fXY-yq-u6v"/>
+                            <constraint firstItem="dG8-CH-DBH" firstAttribute="leading" secondItem="f35-75-w8U" secondAttribute="leading" id="keY-4F-5Ma"/>
+                            <constraint firstItem="dG8-CH-DBH" firstAttribute="centerX" secondItem="RBq-qN-9JF" secondAttribute="centerX" id="nGC-tL-dIy"/>
+                            <constraint firstAttribute="trailing" secondItem="dG8-CH-DBH" secondAttribute="trailing" id="zCn-mU-n5N"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QWC-89-uyd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-833" y="122"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7gu-Dj-uPM">
+            <objects>
+                <viewController id="f3H-BT-p9c" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r2S-CE-u3r"/>
+                        <viewControllerLayoutGuide type="bottom" id="f3b-Am-ESq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N7c-Hd-E8G">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PenguinHealthBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Y5f-Ts-pGh">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Fm3-Ee-rei">
+                                <rect key="frame" x="200" y="72.5" width="283" height="172.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8Z-ef-Z8e">
+                                        <rect key="frame" x="0.0" y="0.0" width="283" height="33"/>
+                                        <color key="backgroundColor" red="1" green="0.86526101543862899" blue="0.40735518578845997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="9Xd-Cz-arc"/>
+                                            <constraint firstAttribute="width" constant="283" id="wg9-Cy-DBQ"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="LEVEL ">
+                                                <attributes>
+                                                    <font key="NSFont" size="24" name="AmericanTypewriter-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="1">
+                                                <attributes>
+                                                    <font key="NSFont" size="24" name="AmericanTypewriter-Bold"/>
+                                                    <font key="NSOriginalFont" size="24" name="AmericanTypewriter-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="      ">
+                                                <attributes>
+                                                    <font key="NSFont" size="34" name="AmericanTypewriter-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MR0-ra-Xvh">
+                                        <rect key="frame" x="0.0" y="36.5" width="283" height="28"/>
+                                        <color key="backgroundColor" red="0.99105291452925237" green="1" blue="0.71171676018887453" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="hcf-0B-KHE"/>
+                                            <constraint firstAttribute="width" constant="283" id="wcK-MJ-rQC"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Collect as much food">
+                                                <attributes>
+                                                    <font key="NSFont" size="18" name="AmericanTypewriter-CondensedBold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdq-mo-Nt3">
+                                        <rect key="frame" x="0.0" y="70.5" width="283" height="28"/>
+                                        <color key="backgroundColor" red="0.99105291449999999" green="1" blue="0.71171676019999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="bHf-g6-vl4"/>
+                                            <constraint firstAttribute="width" constant="283" id="tSK-4p-jMG"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="in">
+                                                <attributes>
+                                                    <font key="NSFont" size="18" name="AmericanTypewriter-CondensedBold"/>
+                                                    <font key="NSOriginalFont" size="18" name="AmericanTypewriter-CondensedBold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <font key="NSFont" size="18" name="AmericanTypewriter-CondensedBold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" 30 seconds!">
+                                                <attributes>
+                                                    <font key="NSFont" size="18" name="AmericanTypewriter-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Se-KM-G99">
+                                        <rect key="frame" x="0.0" y="104.5" width="283" height="28"/>
+                                        <color key="backgroundColor" red="0.99105291449999999" green="1" blue="0.71171676019999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="283" id="AiK-GZ-oxC"/>
+                                            <constraint firstAttribute="height" constant="28" id="syP-RK-mSZ"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Watch out for the">
+                                                <attributes>
+                                                    <font key="NSFont" size="18" name="AmericanTypewriter-CondensedBold"/>
+                                                    <font key="NSOriginalFont" size="18" name="AmericanTypewriter-CondensedBold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" oil!">
+                                                <attributes>
+                                                    <font key="NSFont" size="18" name="AmericanTypewriter-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ly4-I0-9I5">
+                                        <rect key="frame" x="0.0" y="132.5" width="283" height="40"/>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Q69-FH-Er7"/>
+                                            <constraint firstAttribute="width" constant="283" id="f94-Qj-Y5O"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="24"/>
+                                        <state key="normal" title="Ready!">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="BV1-FR-VrT" kind="presentation" id="i0i-H6-LGU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Y5f-Ts-pGh" firstAttribute="leading" secondItem="N7c-Hd-E8G" secondAttribute="leading" id="Fwm-hL-0U1"/>
+                            <constraint firstItem="Fm3-Ee-rei" firstAttribute="centerX" secondItem="N7c-Hd-E8G" secondAttribute="centerX" constant="8" id="G7n-fo-o64"/>
+                            <constraint firstAttribute="trailing" secondItem="Y5f-Ts-pGh" secondAttribute="trailing" id="U0u-Ti-4XG"/>
+                            <constraint firstItem="Y5f-Ts-pGh" firstAttribute="top" secondItem="N7c-Hd-E8G" secondAttribute="top" id="buW-Um-fP9"/>
+                            <constraint firstItem="Fm3-Ee-rei" firstAttribute="centerY" secondItem="N7c-Hd-E8G" secondAttribute="centerY" constant="-29" id="lbq-ra-wGa"/>
+                            <constraint firstItem="f3b-Am-ESq" firstAttribute="top" secondItem="Y5f-Ts-pGh" secondAttribute="bottom" id="uRc-HN-Uhg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uBq-sz-aCO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-181.25937031484258" y="120.8"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PenguinHealthBackground" width="418" height="418"/>
+    </resources>
+</document>
